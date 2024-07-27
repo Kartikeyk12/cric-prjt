@@ -1,0 +1,27 @@
+<div class="banner">
+ <div>
+    <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Roll Number</th>
+              <th>Class</th>
+              <th>Club</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of studentData">
+              <td>{{ item.id }}</td>
+              <td>{{ item.name }}</td>
+              <td>{{ item.rollnumber }}</td>
+              <td>{{ item.class }}</td>
+              <td>{{ item.club }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+       </div>  
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,55 @@
+<header class="main-header">
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <a class="toggle_menu navbar-toggler" href="#"><svg><use xlink:href="#togglemenu"></use></svg></a>
+        <a href="javascript:void(0);" title="logo"><img src="../../../assets/images/logo.png" alt="logo"></a>
+      </div>
+      <div class="headermenu">
+        <nav>
+            <ul>
+              <li><a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" title="Home">Home</a></li>
+              <li><a routerLink="/sport" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" title="Home">Sport</a></li>
+              <li><a routerLink="/inplay" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" title="Home">InPlay</a></li>
+              <li><a routerLink="/exchange" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" title="Home">Exchange</a></li>
+            </ul>
+          </nav>
+        <!-- <ul>
+          <li><a href="javascript:void(0);" title="Home" class="active">Home</a></li>
+          <li><a href="javascript:void(0);" title="Sport">Sport</a></li>
+          <li><a href="javascript:void(0);" title="InPlay">InPlay</a></li>
+          <li><a href="javascript:void(0);" title="Exchange">Exchange</a></li>
+        </ul> -->
+      </div>
+      <div class="header-right-wrap">
+        <div class="search-input">
+          <input type="search" class="form-control input-search-header" placeholder="Search here....">
+          <svg class="icon"><use xlink:href="#search"></use></svg>
+        </div>
+        <div class="balance d-none-mobile">
+          <div><svg><use xlink:href="#wallet"></use></svg></div>
+          <div><span class="balance-value">pts: 5,763.00</span><span class="balance-value">exp: -4247</span></div>
+        </div>
+        <div class="rightside_dropdown">
+          <div data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="username-info d-none-mobile collapsed">
+            <span class="user-icon"><svg><use xlink:href="#user"></use></svg></span>
+            <span class="username">maheshsr</span>
+            <svg class="arrow_down"><use xlink:href="#arrowdown"></use></svg>
+            <div id="collapseExample" class="user-dropdown collapse">
+              <a href="#">Account Statement</a>
+              <a href="#">Current Bets</a>
+              <a href="#">Activity Log</a>
+              <a href="#">Casino Results</a>
+              <a href="#">Live Casino Bets</a>
+              <a href="#">SportBook Bets</a>
+              <a href="#" data-bs-toggle="modal" data-bs-target="#setbuttonmodal">Set Button Value</a>
+              <a href="javascript:void(0)" data-toggle="modal" data-bs-toggle="modal" data-bs-target="#changepassword">Change Password</a>
+              <a routerLink="/main/reports/security-auth-verification" routerLinkActive="router-link-exact-active router-link-active">Security Auth Verification</a>
+              <div class="login-seperator"></div>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  

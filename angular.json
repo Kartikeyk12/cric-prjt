@@ -25,7 +25,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -36,6 +36,8 @@
           },
           "configurations": {
             "production": {
+              "aot": true,
+              "optimization": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -89,12 +91,20 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "scss"
+    }
+  },
+  "cli": {
+    "analytics": "88d9e5c8-5182-477c-970d-7439c8b067de"
   }
 }
